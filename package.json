@@ -19,14 +19,19 @@
     "test": "vitest",
     "test:run": "vitest run",
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "play": "vite playground"
   },
   "bugs": {
     "url": "https://github.com/tangdaoyuan/vite-plugin-reload/issues"
   },
   "homepage": "https://github.com/tangdaoyuan/vite-plugin-reload#readme",
+  "dependencies": {
+    "chokidar": "^3.5.3"
+  },
   "devDependencies": {
     "@suger-tdy/eslint-config": "^1.0.3",
+    "eslint": "^8.14.0",
     "pkgroll": "^1.0.5",
     "vite": "^2.9.6",
     "vitest": "^0.10.0"
