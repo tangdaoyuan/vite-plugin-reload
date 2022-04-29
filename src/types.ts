@@ -1,4 +1,4 @@
 export interface Options {
   includes: string[]
-  excludes: string[]
+  deplay: number
 }
