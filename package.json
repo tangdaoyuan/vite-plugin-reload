@@ -16,7 +16,8 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "vitest run",
+    "test": "vitest",
+    "test:run": "vitest run",
     "lint": "eslint .",
     "play": "vite playground"
   },
