@@ -33,6 +33,7 @@
   "devDependencies": {
     "@suger-tdy/eslint-config": "^1.0.3",
     "@types/micromatch": "^4.0.2",
+    "chokidar": "^3.5.3",
     "eslint": "^8.14.0",
     "pkgroll": "^1.0.5",
     "vite": "^2.9.6",
