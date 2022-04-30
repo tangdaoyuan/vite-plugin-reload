@@ -15,6 +15,10 @@ function log(file: string) {
   )
 }
 
+export function touchConfigFile(configFile: string) {
+  fs.utimesSync(configFile, Date.now(), Date.now())
+}
+
 export function createWatcher(options: Options, server: ViteDevServer, configFile: string) {
   const { includes, deplay } = options
   if (!includes.length)
@@ -22,17 +26,21 @@ export function createWatcher(options: Options, server: ViteDevServer, configFil
 
   const { watcher } = server
   watcher.add(includes)
-
-  const unWatch = watcher.on('change', (file: string) => {
-    if (micromatch.isMatch(file, includes)) {
+  watcher.on('change', (file: string) => {
+    if (micromatch.isMatch(file, includes) || includes.some(include => file.startsWith(include))) {
       log(path.resolve(file))
+
+      if (file === configFile)
+        return
       setTimeout(() => {
-        fs.utimesSync(configFile, Date.now(), Date.now())
+        touchConfigFile(configFile)
       }, deplay)
     }
   })
 
-  return unWatch
+  return () => {
+    watcher.unwatch(includes)
+  }
 }
 
 export type UnWatch = ReturnType<typeof createWatcher>
