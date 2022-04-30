@@ -23,7 +23,7 @@ export function createWatcher(options: Options, server: ViteDevServer, configFil
   const { watcher } = server
   watcher.add(includes)
 
-  watcher.on('change', (file: string) => {
+  const unWatch = watcher.on('change', (file: string) => {
     if (micromatch.isMatch(file, includes)) {
       log(path.resolve(file))
       setTimeout(() => {
@@ -31,6 +31,8 @@ export function createWatcher(options: Options, server: ViteDevServer, configFil
       }, deplay)
     }
   })
+
+  return unWatch
 }
 
 export type UnWatch = ReturnType<typeof createWatcher>
