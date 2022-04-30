@@ -11,7 +11,7 @@ const configFile = 'vite.config.ts' as const
 
 const options = {
   ...defaultOptions,
-  includes: [fs.mkdtempSync(os.tmpdir())],
+  includes: [fs.mkdtempSync(path.join(os.tmpdir(), 'vite-plugin-reload'))],
 }
 
 function createMockConfigFile(tmpDir: string) {
