@@ -42,6 +42,9 @@
     "url": "https://github.com/tangdaoyuan/vite-plugin-reload/issues"
   },
   "homepage": "https://github.com/tangdaoyuan/vite-plugin-reload#readme",
+  "peerDependencies": {
+    "vite": "^2.9.6"
+  },
   "dependencies": {
     "micromatch": "^4.0.5",
     "picocolors": "^1.0.0"
@@ -49,7 +52,6 @@
   "devDependencies": {
     "@suger-tdy/eslint-config": "^1.0.3",
     "@types/micromatch": "^4.0.2",
-    "add": "^2.0.6",
     "chokidar": "^3.5.3",
     "eslint": "^8.14.0",
     "typescript": "^4.5.4",
