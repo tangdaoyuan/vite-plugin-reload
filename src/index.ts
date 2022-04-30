@@ -1,5 +1,4 @@
 import type { Plugin, ViteDevServer } from 'vite'
-import { ReloadSymbol } from './constant'
 import { defaultOptions } from './options'
 import type { Options } from './types'
 import { createWatcher } from './watcher'
@@ -24,9 +23,6 @@ export default function ViteReloadPlugin(options?: Partial<Options>): Plugin {
       configFile = c.configFile
     },
     configureServer(server: ViteDevServer) {
-      server.ws.on(ReloadSymbol, () => {
-        server.ws.send({ type: 'full-reload' })
-      })
       createWatcher(_options, server, configFile!)
     },
   }
