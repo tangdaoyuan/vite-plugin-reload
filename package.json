@@ -15,13 +15,28 @@
     "type": "git",
     "url": "git+https://github.com/tangdaoyuan/vite-plugin-reload.git"
   },
-  "main": "index.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "vitest",
     "test:run": "vitest run",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "play": "pnpm -C playground dev"
+    "typecheck": "tsc --noEmit",
+    "play": "pnpm -C playground dev",
+    "build": "unbuild",
+    "dev": "unbuild --stub"
   },
   "bugs": {
     "url": "https://github.com/tangdaoyuan/vite-plugin-reload/issues"
@@ -34,9 +49,11 @@
   "devDependencies": {
     "@suger-tdy/eslint-config": "^1.0.3",
     "@types/micromatch": "^4.0.2",
+    "add": "^2.0.6",
     "chokidar": "^3.5.3",
     "eslint": "^8.14.0",
-    "pkgroll": "^1.0.5",
+    "typescript": "^4.5.4",
+    "unbuild": "^0.7.4",
     "vite": "^2.9.6",
     "vitest": "^0.10.0"
   }
