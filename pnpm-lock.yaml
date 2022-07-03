@@ -14,7 +14,7 @@ importers:
       typescript: ^4.7.3
       unbuild: ^0.7.4
       vite: ^2.9.12
-      vitest: ^0.16.0
+      vitest: ^0.17.0
     dependencies:
       micromatch: registry.npmmirror.com/micromatch/4.0.5
       picocolors: registry.npmmirror.com/picocolors/1.0.0
@@ -27,7 +27,7 @@ importers:
       typescript: 4.7.3
       unbuild: registry.npmmirror.com/unbuild/0.7.4
       vite: 2.9.12
-      vitest: 0.16.0
+      vitest: 0.17.0
 
   playground:
     specifiers:
@@ -2808,16 +2808,19 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.16.0:
-    resolution: {integrity: sha512-Ntp6jrM8wf2NMtamMBLkRBBdeqHkgAH/WMh5Xryts1j2ft2D8QZQbiSVFkSl4WmEQzcPP0YM069g/Ga1vtnEtg==}
+  /vitest/0.17.0:
+    resolution: {integrity: sha512-5YO9ubHo0Zg35mea3+zZAr4sCku32C3usvIH5COeJB48TZV/R0J9aGNtGOOqEWZYfOKP0pGZUvTokne3x/QEFg==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
+      '@edge-runtime/vm': '*'
       '@vitest/ui': '*'
       c8: '*'
       happy-dom: '*'
       jsdom: '*'
     peerDependenciesMeta:
+      '@edge-runtime/vm':
+        optional: true
       '@vitest/ui':
         optional: true
       c8:
@@ -3225,7 +3228,7 @@ packages:
       call-me-maybe: registry.npmmirror.com/call-me-maybe/1.0.1
       cross-spawn: registry.npmmirror.com/cross-spawn/7.0.3
       string-argv: registry.npmmirror.com/string-argv/0.3.1
-      type-detect: registry.npmmirror.com/type-detect/4.0.8
+      type-detect: 4.0.8
     dev: true
 
   registry.npmmirror.com/@nodelib/fs.scandir/2.1.5:
@@ -4428,13 +4431,6 @@ packages:
     engines: {node: '>=8.0'}
     dependencies:
       is-number: registry.npmmirror.com/is-number/7.0.0
-
-  registry.npmmirror.com/type-detect/4.0.8:
-    resolution: {integrity: sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/type-detect/-/type-detect-4.0.8.tgz}
-    name: type-detect
-    version: 4.0.8
-    engines: {node: '>=4'}
-    dev: true
 
   registry.npmmirror.com/typical/4.0.0:
     resolution: {integrity: sha512-VAH4IvQ7BDFYglMd7BPRDfLgxZZX4O4TFcRDA6EN5X7erNJJq+McIEp8np9aVtxrCJ6qx4GTYVfOWNjcqwZgRw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/typical/-/typical-4.0.0.tgz}
