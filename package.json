@@ -54,7 +54,7 @@
   "devDependencies": {
     "@suger-tdy/eslint-config": "^1.1.4",
     "@types/micromatch": "^4.0.2",
-    "bumpp": "^7.1.1",
+    "bumpp": "^8.0.0",
     "chokidar": "^3.5.3",
     "eslint": "^8.17.0",
     "typescript": "^4.7.3",
