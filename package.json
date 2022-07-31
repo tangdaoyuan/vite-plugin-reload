@@ -45,7 +45,7 @@
   },
   "homepage": "https://github.com/tangdaoyuan/vite-plugin-reload#readme",
   "peerDependencies": {
-    "vite": "^2.9.6"
+    "vite": "^3.0.0"
   },
   "dependencies": {
     "micromatch": "^4.0.5",
@@ -59,7 +59,7 @@
     "eslint": "^8.17.0",
     "typescript": "^4.7.3",
     "unbuild": "^0.7.4",
-    "vite": "^2.9.12",
+    "vite": "^3.0.0",
     "vitest": "^0.19.0"
   }
 }
