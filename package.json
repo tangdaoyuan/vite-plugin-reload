@@ -45,21 +45,21 @@
   },
   "homepage": "https://github.com/tangdaoyuan/vite-plugin-reload#readme",
   "peerDependencies": {
-    "vite": "^2.9.6"
+    "vite": "^3.0.0"
   },
   "dependencies": {
     "micromatch": "^4.0.5",
     "picocolors": "^1.0.0"
   },
   "devDependencies": {
-    "@suger-tdy/eslint-config": "^1.1.4",
+    "@suger-tdy/eslint-config": "^1.1.9",
     "@types/micromatch": "^4.0.2",
-    "bumpp": "^8.0.0",
+    "bumpp": "^8.2.1",
     "chokidar": "^3.5.3",
-    "eslint": "^8.17.0",
-    "typescript": "^4.7.3",
-    "unbuild": "^0.7.4",
-    "vite": "^2.9.12",
-    "vitest": "^0.19.0"
+    "eslint": "^8.20.0",
+    "typescript": "^4.7.4",
+    "unbuild": "^0.7.6",
+    "vite": "^3.0.4",
+    "vitest": "^0.19.1"
   }
 }
