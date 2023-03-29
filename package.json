@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-reload",
   "version": "0.1.2",
-  "packageManager": "pnpm@7.25.1",
+  "packageManager": "pnpm@7.30.5",
   "description": "reload target directory for development",
   "keywords": [
     "vite",
@@ -60,6 +60,6 @@
     "typescript": "^4.7.4",
     "unbuild": "^1.0.0",
     "vite": "^4.0.0",
-    "vitest": "^0.28.0"
+    "vitest": "^0.29.0"
   }
 }
