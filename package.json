@@ -45,7 +45,7 @@
   },
   "homepage": "https://github.com/tangdaoyuan/vite-plugin-reload#readme",
   "peerDependencies": {
-    "vite": "^4.0.0"
+    "vite": "^5.0.0"
   },
   "dependencies": {
     "micromatch": "^4.0.5",
