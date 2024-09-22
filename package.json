@@ -55,7 +55,7 @@
     "@suger-tdy/eslint-config": "^1.1.9",
     "@types/micromatch": "^4.0.2",
     "bumpp": "^9.0.0",
-    "chokidar": "^3.5.3",
+    "chokidar": "^4.0.0",
     "eslint": "^8.20.0",
     "typescript": "^4.7.4",
     "unbuild": "^1.0.0",
