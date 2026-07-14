@@ -31,7 +31,7 @@ importers:
 
   playground:
     specifiers:
-      '@vitejs/plugin-vue': ^4.0.0
+      '@vitejs/plugin-vue': ^6.0.0
       typescript: ^4.7.4
       vite: ^4.0.0
       vue: ^3.2.37
@@ -39,7 +39,7 @@ importers:
     dependencies:
       vue: 3.2.37
     devDependencies:
-      '@vitejs/plugin-vue': 4.0.0_vite@4.0.0+vue@3.2.37
+      '@vitejs/plugin-vue': 6.0.8_vite@4.0.0+vue@3.2.37
       typescript: 4.7.4
       vite: 4.0.0
       vue-tsc: 1.0.8_typescript@4.7.4
@@ -585,6 +585,10 @@ packages:
       fastq: 1.13.0
     dev: true
 
+  /@rolldown/pluginutils/1.0.1:
+    resolution: {integrity: sha512-2j9bGt5Jh8hj+vPtgzPtl72j0yRxHAyumoo6TNfAjsLB04UtpSvPbPcDcBMxz7n+9CYB0c1GxQFxYRg2jimqGw==}
+    dev: true
+
   /@rollup/plugin-alias/4.0.2_rollup@3.5.0:
     resolution: {integrity: sha512-1hv7dBOZZwo3SEupxn4UA2N0EDThqSSS+wI1St1TNTBtOZvUchyIClyHcnDcjjrReTPZ47Faedrhblv4n+T5UQ==}
     engines: {node: '>=14.0.0'}
@@ -931,13 +935,14 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vitejs/plugin-vue/4.0.0_vite@4.0.0+vue@3.2.37:
-    resolution: {integrity: sha512-e0X4jErIxAB5oLtDqbHvHpJe/uWNkdpYV83AOG2xo2tEVSzCzewgJMtREZM30wXnM5ls90hxiOtAuVU6H5JgbA==}
-    engines: {node: ^14.18.0 || >=16.0.0}
+  /@vitejs/plugin-vue/6.0.8_vite@4.0.0+vue@3.2.37:
+    resolution: {integrity: sha512-0ZjgOg7oO6farnNGup7yvoM/YXZV84OZxHAwtflItNa/6zzQyVb5LNxyea3FEKEX2XlagIKzrlH7wwxkKgtiew==}
+    engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
-      vite: ^4.0.0
+      vite: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
       vue: ^3.2.25
     dependencies:
+      '@rolldown/pluginutils': 1.0.1
       vite: 4.0.0
       vue: 3.2.37
     dev: true
